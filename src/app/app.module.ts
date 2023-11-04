@@ -17,8 +17,8 @@ import { MessagesComponent } from './messages/messages.component';// <-- NgModel
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

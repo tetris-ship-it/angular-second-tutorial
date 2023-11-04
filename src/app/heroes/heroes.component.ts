@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Hero } from '../heroInterface';
 import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
@@ -22,7 +22,7 @@ export class HeroesComponent {
   getHeroes() : void{
     this.heroService.getHeroes().subscribe(heroes=>this.heroes=heroes);
   }
-  ngOnInit():void{
+  ngOnInit(): void{
     this.getHeroes();//for returning it at the right time
   }
 }
