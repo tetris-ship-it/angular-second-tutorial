@@ -13,7 +13,7 @@ export class HeroesComponent {
   selectedHero?:Hero;
   onSelect(hero: Hero): void {
     this.selectedHero=hero;
-    this.messageService.add(`Selected hero with id : ${hero.id} `);
+    this.messageService.add(`Selected hero with id : ${hero.id} `);//back ticks for using the value of the hero.id variable using the ${} variable access method
 
   }
   constructor(private heroService : HeroService, private messageService : MessageService){
