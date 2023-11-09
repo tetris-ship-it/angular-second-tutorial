@@ -27,6 +27,6 @@ export class HeroesComponent {
     this.getHeroes();//for returning it at the right time
   }
   goBack():void{
-    this.location.back();
+    this.location.back();//the back method is supplied as it's a part of the imported Location class
   }
 }
