@@ -1,6 +1,6 @@
 <h2>My Heroes</h2>
   <ul class="heroes">
-    <li *ngFor="let hero of heroes">
+    <li *ngFor="let hero of heroes"><!--if there are multiple variables with the same name then the precedence logic is  1)template variable name 2)a name in the directive's context 3)the component's member names-->
       <!--<button [class.selected]="hero===selectedHero" type="button" (click)="onSelect(hero)">
         <span class = "badge">{{hero.id}} </span>
         <span class = "name">{{hero.name}}</span>
