@@ -7,7 +7,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 const routes: Routes = [{ path: 'heroes', component: HeroesComponent },{path: 'dashboard', component:DashboardComponent}, {path:'', redirectTo:'/dashboard', pathMatch:'full'}, {path:'details/:id', component:HeroDetailComponent}];//the :id indicates the id is a placeholder
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)],//initializes the RouterModule with the provided routes.
+  exports: [RouterModule],//exports the initialized RouterModule
 })
 export class AppRoutingModule {}

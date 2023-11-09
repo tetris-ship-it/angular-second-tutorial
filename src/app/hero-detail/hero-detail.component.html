@@ -1,8 +1,9 @@
       <div *ngIf="hero">
-    <h2>{{hero.name|uppercase}} Details</h2>
+    <h2>{{hero.name|uppercase}} Details</h2><!--the "uppercase" pipe makes the hero.name value uppercase-->
     <div>Id: {{hero.id}}</div>
     <div>
       <label for="hero-name">Name:</label>
-      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name"><!--the [(ngModel)] is used for 2 way data binding that changes the value of the specified property-->
     </div>
     </div>
+    <button type="button" (click) = "goBack()">Go Back</button><!--goBack() function defined in the hero-detail class-->
