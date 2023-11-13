@@ -6,6 +6,6 @@ import { MessageService } from '../message.service';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
-  constructor(public messageService : MessageService){}//instantiation of the messageService class for the messages.
+  constructor(public messageService : MessageService){}//instantiation of the messageService class to use the methods included inside the service.
 }
 
