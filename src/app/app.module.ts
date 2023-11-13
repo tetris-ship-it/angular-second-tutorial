@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [
+  declarations: [//every component that uses the imported stuff should be included in the declarations property
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,

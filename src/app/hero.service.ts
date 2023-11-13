@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HEROES } from './mock-heroes';
 import { Hero } from './heroInterface';
-import { Observable, of } from 'rxjs';//rxjs is where the Observable resides, this was added in the code editor of github then I pulled the changes from the remote repo to the local git repo and working directory
-import { MessageService } from './message.service';
+import { Observable, of } from 'rxjs';//rxjs is where the Observable resides, this was added in the code editor of github then I pulled the changes from the remote repo to the local git repo and working directory.
+import { MessageService } from './message.service';//git pull requires an established connection because it updates the version of the specified branch based on changes from the remote repository unlike the git clone which creates a connection and downloads the stuff to the working directory, it doesn't need a prior connection.
 @Injectable({
   providedIn: 'root'//this means that it's provided in the root directory which is the mainline working directory.
 })
