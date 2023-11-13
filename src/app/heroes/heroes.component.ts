@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';//there is no need for OnInit in this import statement because we included it in the app.module.ts file and included this component in the declarations property of the NgModule decorator.
 import { Hero } from '../heroInterface';
 //import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
