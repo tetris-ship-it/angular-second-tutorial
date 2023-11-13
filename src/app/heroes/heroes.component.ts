@@ -3,7 +3,7 @@ import { Hero } from '../heroInterface';
 //import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
-import { Location } from '@angular/common';
+import { Location } from '@angular/common';//the command for creating a new component is "ng generate component componentName" and for creating a new service "ng generate service serviceName"
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -30,3 +30,4 @@ export class HeroesComponent {
     this.location.back();//the back method is supplied as it's a part of the imported Location class
   }
 }
+//the "git branch -d branch_name" command deletes the specifies branch from the local repository while "git push origin --delete branch_name" deletes the branch from the remote repository.
