@@ -4,7 +4,7 @@ import { Hero } from './heroInterface';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'//checking by trying to pull the changes on the remote repo's branch
 })
 export class HeroService {
   getHeroes() : Observable<Hero[]>{
