@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HEROES } from './mock-heroes';
 import { Hero } from './heroInterface';
-import { Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs';//rxjs is where the Observable resides
 import { MessageService } from './message.service';
 @Injectable({
   providedIn: 'root'//this means that it's provided in the root directory which is the mainline working directory.
