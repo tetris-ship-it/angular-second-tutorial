@@ -10,7 +10,7 @@ import { Location } from '@angular/common';//the command for creating a new comp
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent {
-  heroes : Hero[] = [];
+  heroes : Hero[] = [];//an empty array of type Hero
   /*selectedHero?:Hero;
   onSelect(hero: Hero): void {
     this.selectedHero=hero;

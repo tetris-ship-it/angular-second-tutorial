@@ -25,8 +25,8 @@ export class HeroDetailComponent {
    getHero():void{
     const id = Number(this.route.snapshot.paramMap.get('id'));//snapshot provides a snapshot of the route information about the current route, paramMap provides the parameters associated with the current route, get('id') retrieves the value of the id paramter from the paramMap(also called the parameter dictionary) of the snapshot of the instance of the activatedroute class(the route)
     this.heroService.getHero(id).subscribe(hero=>this.hero=hero);//the difference between Observable and Promise is that an observable is lazy meaning that when and how to use the data can be controller but promise activates the moment the code runs. Plus for multiple value returns using an observable is advisable but when single values are returned using a promise is better.
-    //and another difference is that observable needs subscribe() in its recipient while promise needs then() in its recipient
-   }
+    //and another difference is that observable needs subscribe() in its recipient while promise needs then() in its recipient, we are basically giving a value to the nullable "hero class"
+   }//in this section we are using the getHero method of the heroService then subscribing to the observable with the implementation inside assigning the hero value obtained from the method to the hero property inside this class
    goBack():void{
     this.location.back();
    }
