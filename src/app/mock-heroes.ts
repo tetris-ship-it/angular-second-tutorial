@@ -1,6 +1,6 @@
 import { Hero } from "./heroInterface";
 
-export const HEROES: Hero[] = [
+export const HEROES: Hero[] = [//an array of randomly made heroes or Hero instances
   { id: 12, name: 'Dr. Nice' },
   { id: 13, name: 'Bombasto' },
   { id: 14, name: 'Celeritas' },

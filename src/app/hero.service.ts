@@ -13,10 +13,10 @@ export class HeroService {
     return heroes;
   }
   getHero(id : number) : Observable<Hero | undefined> {//by including "undefined" in the type definition using Observable we are making the possible undefined return valid so there won't be an error to be encountered in this respect.
-    const hero = HEROES.find((hero) => hero.id === id);//find a hero object from the array of hero objects that matches the obtained id parameter.
+    const hero = HEROES.find((hero) => hero.id === id);//find a hero object from the array of hero objects that matches the obtained id parameter. Project each element in the HEROES collection of heroes to the condition of checking if the ids match
     if(hero){
       this.messageService.add(`HeroService fetched hero with id : ${id}`);
-      return of(hero);
+      return of(hero);//if we declare the method as an observable then we use "of()" method when performing the return to indicate creation of an observable allowing the data to be treated as an asynchronous stream
     }
     else{
       const errorMessage = ` found no hero with id : ${id}`;
@@ -24,5 +24,5 @@ export class HeroService {
       return of(undefined);
     }
   }
-  constructor(private messageService : MessageService) { }
+  constructor(private messageService : MessageService) { }//to use the service in the typescript file we do this declaration
 }
