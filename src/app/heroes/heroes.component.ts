@@ -17,7 +17,7 @@ export class HeroesComponent {
     this.messageService.add(`Selected hero with id : ${hero.id} `);//back ticks for using the value of the hero.id variable using the ${} variable access method
 
   }*/
-  constructor(private heroService : HeroService, private messageService : MessageService, public location : Location){
+  constructor(private heroService : HeroService, private messageService : MessageService, public location : Location){//declaring instances for all the services we need to use
 
   }
   getHeroes() : void{
@@ -27,7 +27,7 @@ export class HeroesComponent {
     this.getHeroes();//for accessing the getHeroes() method on component initialization, lifecycle hook(2nd in precedence, comes next to ngOnChanges())
   }
   goBack():void{
-    this.location.back();//the back method is supplied as it's a part of the imported Location class
+    this.location.back();//the back method here allows to go back one page by using the instance of the imported Location
   }
 }
 //the "git branch -d branch_name" command deletes the specifies branch from the local repository while "git push origin --delete branch_name" deletes the branch from the remote repository.

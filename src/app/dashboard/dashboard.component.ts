@@ -17,7 +17,7 @@ export class DashboardComponent {
   getHeroes(): void {
     this.heroService
       .getHeroes()
-      .subscribe((heroes) => (this.heroes = heroes.slice(1, 5))); //slice the list to return only the 2nd,3rd,4th and 5th heroes
+      .subscribe((heroes) => (this.heroes = heroes.slice(1, 5))); //slice the list to return only the 2nd,3rd,4th and 5th heroes, the slice method is used for returning only the specified set of elements.
   }
   goBack():void{
     this.location.back();

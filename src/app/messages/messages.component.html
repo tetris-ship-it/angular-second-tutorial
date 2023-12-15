@@ -1,8 +1,8 @@
-<div *ngIf="messageService.messages.length">
+<div *ngIf="messageService.messages.length"><!--Check if the length of the messages array in the messageService is truthy or falsey, truthy would basically be greater than 0 and falsey would be 0 or null or undefined-->
 
   <h2>Messages</h2>
   <button type="button" class="clear"
-          (click)="messageService.clear()">Clear messages</button>
+          (click)="messageService.clear()">Clear messages</button><!--when clicked this button clears all the messages in the message service-->
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
 
 </div>
