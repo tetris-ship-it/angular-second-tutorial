@@ -11,12 +11,12 @@
   position: relative;
   cursor: pointer;
 }
-
-.heroes li:hover {
+/*in all these the ' ' is a descendant combinator indicating all descendancy while '>' child combinator indicates only direct children*/
+.heroes li:hover {/*this selector selects all list elements under elements with "heroes" class and applied when they're in their hover state*/
   left: .1em;
 }
 
-.heroes a {
+.heroes a {/*all a or hyperlink elements under alements with the "heroes" class*/
   color: #333;
   text-decoration: none;
   background-color: #EEE;
@@ -38,7 +38,7 @@
   color: #fafafa;
 }
 
-.heroes .badge {
+.heroes .badge {/*applies to all elements with a "badge" class which are descendants of elements with a "heroes"*/
   display: inline-block;
   font-size: small;
   color: white;
