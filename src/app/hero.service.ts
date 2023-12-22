@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HEROES } from './mock-heroes';
 import { Hero } from './heroInterface';
-import { Observable, of } from 'rxjs';//rxjs is where the Observable resides, this was added in the code editor of github then I pulled the changes from the remote repo to the local git repo and working directory.
+import { Observable, of } from 'rxjs';//rxjs is where Observable resides, this was added in the code editor of github then I pulled the changes from the remote repo to the local git repo and working directory.
 import { MessageService } from './message.service';//git pull requires an established connection because it updates the version of the specified branch based on changes from the remote repository unlike the git clone which creates a connection and downloads the stuff to the working directory, it doesn't need a prior connection.
 @Injectable({
   providedIn: 'root'//this means that it's provided in the root directory which is the mainline working directory.
 })
 export class HeroService {
   getHeroes() : Observable<Hero[]>{//this observable is a method that represents a stream of asynchronous data.(in this case of type Hero interface)
-    const heroes = of(HEROES);//using of() lets us create an observable which allows the heroes data to be treated as an asynchronous stream of data.
+    const heroes = of(HEROES);//using of() lets us create an observable which allows the heroes data to be treated as an asynchronous stream of data. It emits the array as a single value
     this.messageService.add("HeroService: fetched heroes");
     return heroes;
   }
@@ -20,7 +20,7 @@ export class HeroService {
     }
     else{
       const errorMessage = ` found no hero with id : ${id}`;
-      this.messageService.add(`HeroService:${errorMessage}`);
+      this.messageService.add(`HeroService:${errorMessage}`);//add a new message to the messages array
       return of(undefined);
     }
   }

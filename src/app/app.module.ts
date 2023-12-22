@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [//every component that uses the imported stuff should be included in the declarations property
+  declarations: [//every component that uses the imported stuff should be included in the declarations property, in other terms this is where we specify which components are part of the module
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule//to specify which Modules we are importing into our Module(into our cohesive block of code)
   ],//all imports must be included in here
   providers: [],
   bootstrap: [AppComponent]

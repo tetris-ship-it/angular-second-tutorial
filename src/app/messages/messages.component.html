@@ -1,8 +1,8 @@
-<div *ngIf="messageService.messages.length"><!--Check if the length of the messages array in the messageService is truthy or falsey, truthy would basically be greater than 0 and falsey would be 0 or null or undefined-->
-
+<div *ngIf="messageService.messages.length"><!--Check if the length of the messages array in the messageService is truthy or falsey, truthy would basically be greater than 0 and falsey would be 0 or null or undefined, and render the element only if it is truthy-->
+<!--if the array is not empty meaning if there are actual messages then this template element will be displayed-->
   <h2>Messages</h2>
   <button type="button" class="clear"
           (click)="messageService.clear()">Clear messages</button><!--when clicked this button clears all the messages in the message service-->
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div><!--message value displayed using the interpolation syntax {{}}-->
 
 </div>

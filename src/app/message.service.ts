@@ -7,10 +7,10 @@ export class MessageService {
   messages : string[] = [];
 
   add(message: string) : void {
-    this.messages.push(message);
+    this.messages.push(message);//push the message onto the messages string array.
   }
   clear(){
-    this.messages=[];
+    this.messages=[];//re-assigns a value to the messages property giving it null when the method is used.
   }
   constructor() { }
 }

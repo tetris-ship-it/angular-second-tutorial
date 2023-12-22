@@ -30,4 +30,4 @@ export class HeroesComponent {
     this.location.back();//the back method here allows to go back one page by using the instance of the imported Location
   }
 }
-//the "git branch -d branch_name" command deletes the specifies branch from the local repository while "git push origin --delete branch_name" deletes the branch from the remote repository.
+//the "git branch -d branch_name" command deletes the specified branch from the local repository while "git push origin --delete branch_name" deletes the branch from the remote repository.
