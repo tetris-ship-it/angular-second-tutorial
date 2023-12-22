@@ -19,7 +19,7 @@ export class HeroService {
       return of(hero);//if we declare the method as an observable then we use "of()" method when performing the return to indicate creation of an observable allowing the data to be treated as an asynchronous stream
     }
     else{
-      const errorMessage = ` found no hero with id : ${id}`;
+      const errorMessage = ` found no hero with id : ${id}`;//back ticks being used tells that ${} can be used for showing the value in a variable
       this.messageService.add(`HeroService:${errorMessage}`);//add a new message to the messages array
       return of(undefined);//in case there is no hero with the specified id then return undefined of type "observable" because we're using of() method
     }
