@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule,
     HttpClientModule//to specify which Modules we are importing into our Module(into our cohesive block of code)
   ],//all imports must be included in here
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [],//the services that are available for injection
+  bootstrap: [AppComponent]//this is to specify the component that angular will bootstrap when the application is started
 })
 export class AppModule { }
