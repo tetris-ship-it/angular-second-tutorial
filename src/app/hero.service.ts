@@ -21,7 +21,7 @@ export class HeroService {
     else{
       const errorMessage = ` found no hero with id : ${id}`;
       this.messageService.add(`HeroService:${errorMessage}`);//add a new message to the messages array
-      return of(undefined);
+      return of(undefined);//in case there is no hero with the specified id then return undefined of type "observable" because we're using of() method
     }
   }
   constructor(private messageService : MessageService) { }//to use the service in the typescript file we do this declaration

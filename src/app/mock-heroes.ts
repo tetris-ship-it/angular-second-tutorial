@@ -1,5 +1,5 @@
 import { Hero } from "./heroInterface";
-
+//we're making an array by implementing the Hero interface
 export const HEROES: Hero[] = [//an array of randomly made heroes or Hero instances
   { id: 12, name: 'Dr. Nice' },
   { id: 13, name: 'Bombasto' },

@@ -6,12 +6,13 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/jquery/dist/jquery.min.js"></script><!--using jquery and indicating that here-->
 <script src="vendor/tether/dist/js/tether.min.js"></script>
-<link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
-<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css"><!--we are using bootstrap and indicating it right here-->
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script><!--also specifying that we're using bootstrap js and indicating it here-->
 </head>
 <body>
-  <app-root></app-root>
+  <app-root></app-root><!--app root being the selector for app component, this is an indication that its the component to be loaded first-->
+  <!--it is redundant that we're showing which component should be loaded or created first in both the global template file and the app NgModule definition using the bootstrap property-->
 </body>
 </html>
