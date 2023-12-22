@@ -1,4 +1,5 @@
 /* HeroesComponent's private CSS styles */
+/* these private styles are suited for their respective components like component specific styles to the general/global template file*/
 .heroes {
   margin: 0 0 2em 0;
   list-style-type: none;
