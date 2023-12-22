@@ -10,7 +10,7 @@ export class HeroService {
   getHeroes() : Observable<Hero[]>{//this observable is a method that represents a stream of asynchronous data.(in this case of type Hero interface)
     const heroes = of(HEROES);//using of() lets us create an observable which allows the heroes data to be treated as an asynchronous stream of data. It emits the array as a single value
     this.messageService.add("HeroService: fetched heroes");
-    return heroes;//return the "constant" type array of heroes
+    return heroes;//return the "constant" type array of heroes, this comment change was pulled from the Github Code editor section of the repository
   }
   getHero(id : number) : Observable<Hero | undefined> {//by including "undefined" in the type definition using Observable we are making the possible undefined return valid so there won't be an error to be encountered in this respect.
     const hero = HEROES.find((hero) => hero.id === id);//find a hero object from the array of hero objects that matches the obtained id parameter. Project each element in the HEROES collection of heroes to the condition of checking if the ids match
